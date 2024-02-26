@@ -4,6 +4,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 
+# this is used for when i press a button, like login, logout, register.
+
 app_name = 'djangoapp'
 urlpatterns = [
     # # path for registration
@@ -14,6 +16,7 @@ urlpatterns = [
     path(route='logout', view=views.logout_request, name='logout'),
 
     # path for dealer reviews view
+#    path(route='fetchReviews', view=views.registration, name='register'),
 
     # path for add a review view
 
