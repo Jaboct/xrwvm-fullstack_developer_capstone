@@ -32,11 +32,9 @@ urlpatterns = [
     path('contact/', TemplateView.as_view(template_name="Contact.html")),
     path('login/', TemplateView.as_view(template_name="index.html")),
     path('register/', TemplateView.as_view(template_name="index.html")),
-#    path('fetchReviews/', include('database.app')),
-#    path('fetchReviews/', include('djangoapp.urls')),
-#    path('fetchReviews/', TemplateView.as_view(template_name="index.html")),
-#    path('fetchDealers/', TemplateView.as_view(template_name="index.html")),
-#    path(route='fetchDealers', view=views.logout_request, name='logout'),
+    path('dealers/', TemplateView.as_view(template_name="index.html")),
+    path('dealer/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 

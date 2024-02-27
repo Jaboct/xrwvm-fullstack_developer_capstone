@@ -42,6 +42,7 @@ const Dealers = () => {
       setDealersList(all_dealers)
     }
   }
+
   useEffect(() => {
     get_dealers();
   },[]);  
